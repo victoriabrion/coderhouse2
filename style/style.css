@@ -1,81 +1,124 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap');
+
 
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+
+h1{
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+img{
+    width: 68%;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+iframe{
+    width: 100%;
+    align-items: center;
+}
+
+.padre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.hijo{
+    padding: 10px;
 }
 
 body{
-    background-color: rgba(255, 255, 255, 0.925);
+    background-color: white;
 }
 
 header{
+    padding: 10px;
     background-color: black;
-    padding: 80px;
 }
 
-ul {
+ul li{
+    color: white;
     list-style-type: none;
 }
 
 a{
+    text-decoration: none;
+    padding: 20px;
     color: white;
 }
 
-ol li {
-    display: inline-block;
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-h1{
-    color: thistle;
-    padding: 40px;
-    border: 20px solid blueviolet;
-    text-align: center;
-    margin: 80px 40px;
-}
-
-p{
-    padding: 40px;
-    margin:  400px 60px;
-    border: 10px solid cornflowerblue;
-}
-
-.dos{
-    border: 10px solid red;
-    border-radius: 50px;
-}
-
-img{
-    margin-top: 80px;
-    margin-left: 200px;
-    border: 10px double blueviolet;
-    border-radius: 1cm;
+.icon{
+    width: 50px;
+    height: 50px;
 }
 
 footer{
-    padding: 80px;
-    margin-top: 400px;
-    background-color: blueviolet;
+    padding: 50px;
+    background-color: grey;
 }
 
-
-
-
-div{
-    color: white;
-    background-color: black;
-    padding: 20px;
-    margin: 10px;
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
 }
 
-.flex{
-    height: 500px;
-    background-color: blueviolet;
+.tour{
+   padding: 10px;
+   margin: 20px 20px 80px 20px;
+   background-clip: border-box;
+   background: black;
+
+}
+.event{
+    height: 50px;
+    color: black;
+    background-color: white;
     padding: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     align-content: center;
+    border: solid 0.5px;
+}
+
+.ticketLink{
+    background-color: rgba(177, 171, 176, 0.795);
+    font-weight: bold;
+    color: black;
+}
+
+p{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    text-align: justify;
+}
+
+.albums{
+    display: flex;
+    margin: 20px;
 }
