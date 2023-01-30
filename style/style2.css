@@ -16,9 +16,14 @@ h1{
     text-align: center;
 }
 img{
-    width: 100%;
+    width: 68%;
     margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
+
 iframe{
     width: 100%;
     align-items: center;
@@ -75,4 +80,45 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+
+.tour{
+   padding: 10px;
+   margin: 20px 20px 80px 20px;
+   background-clip: border-box;
+   background: black;
+
+}
+.event{
+    height: 50px;
+    color: black;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border: solid 0.5px;
+}
+
+.ticketLink{
+    background-color: rgba(177, 171, 176, 0.795);
+    font-weight: bold;
+    color: black;
+}
+
+p{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    text-align: justify;
+}
+
+.albums{
+    display: flex;
+    margin: 20px;
 }
