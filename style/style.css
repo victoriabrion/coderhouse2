@@ -1,21 +1,21 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap');
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Poppins;
 }
 
 
-h1{
+h1 {
     padding: 10px;
     margin: 10px;
     color: black;
     text-align: center;
 }
-img{
+
+img {
     width: 68%;
     margin-top: 10px;
     display: block;
@@ -24,65 +24,65 @@ img{
     margin-bottom: 20px;
 }
 
-iframe{
+iframe {
     width: 100%;
     align-items: center;
 }
 
-.videos{
+.videos {
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
     grid-template-areas: "video1 video2 video3"
-                         "video4 video5 video6";
+        "video4 video5 video6";
 }
 
-.video1{
+.video1 {
     padding: 5px;
     grid-area: video1;
 }
 
-.video2{
+.video2 {
     padding: 5px;
     grid-area: video2;
 }
 
-.video3{
+.video3 {
     padding: 5px;
     grid-area: video3;
 }
 
-.video4{
+.video4 {
     padding: 5px;
     grid-area: video4;
 }
 
-.video5{
+.video5 {
     padding: 5px;
     grid-area: video5;
 }
 
-.video6{
+.video6 {
     padding: 5px;
     grid-area: video6;
 }
 
-body{
+body {
     background-color: white;
 }
 
-header{
+header {
     padding: 5px;
     background-color: black;
 }
 
-ul li{
+ul li {
     color: white;
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
     padding: 10px;
     color: white;
@@ -94,17 +94,17 @@ nav ul {
     justify-content: space-between;
 }
 
-.icon{
+.icon {
     width: 50px;
     height: 50px;
 }
 
-footer{
+footer {
     padding: 50px;
     background-color: grey;
 }
 
-.redes{
+.redes {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -112,14 +112,15 @@ footer{
     height: 20px;
 }
 
-.tour{
-   padding: 10px;
-   margin: 20px 20px 80px 20px;
-   background-clip: border-box;
-   background: black;
+.tour {
+    padding: 10px;
+    margin: 20px 20px 80px 20px;
+    background-clip: border-box;
+    background: black;
 
 }
-.event{
+
+.event {
     height: 50px;
     color: black;
     background-color: white;
@@ -133,53 +134,53 @@ footer{
     border: solid 0.5px;
 }
 
-.ticketLink{
+.ticketLink {
     background-color: rgba(177, 171, 176, 0.795);
     font-weight: bold;
     color: black;
 }
 
-p{
+p {
     display: flex;
     margin: 20px;
     align-items: center;
     text-align: justify;
 }
 
-.albums{
+.albums {
     display: flex;
     margin: 20px;
 }
 
 
-.albums{
+.albums {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
     grid-template-areas: "horses radioEthiopia"
-                         "easter wave";
+        "easter wave";
 }
 
-.horses{
+.horses {
     grid-area: horses;
 }
 
-.radioEthiopia{
+.radioEthiopia {
     grid-area: radioEthiopia;
 }
 
-.easter{
+.easter {
     grid-area: easter;
 }
 
-.wave{
+.wave {
     grid-area: wave;
 }
 
 
-@media screen and (max-width: 576px){
-    .albums{
-        grid-template-columns: 90vw;
+@media screen and (max-width: 786px) {
+    .albums {
+        grid-template-columns: 100vw;
         grid-template-rows: auto;
         grid-template-areas: "horses"
                              "radioEthiopia"
@@ -188,9 +189,9 @@ p{
     }
 }
 
-@media screen and (max-width: 786px){
-    .albums{
-        grid-template-columns: 90vw;
+@media screen and (max-width: 576px) {
+    .albums {
+        grid-template-columns: 100vw;
         grid-template-rows: auto;
         grid-template-areas: "horses"
                              "radioEthiopia"
@@ -199,22 +200,19 @@ p{
     }
 }
 
-@media screen and (max-width: 576px){
-    .videos{
-        grid-template-columns: 90vw;
+@media screen and (max-width: 786px) {
+    .videos {
+        grid-template-columns: 50vw;
         grid-template-rows: auto;
-        grid-template-areas: "video1"
-                             "video2"
-                             "video3"
-                             "video4"
-                             "video5"
-                             "video6";
+        grid-template-areas: "video1 video2"
+                             "video3 video4"
+                             "video5 video6";
     }
 }
 
-@media screen and (max-width: 786px){
-    .videos{
-        grid-template-columns: 90vw;
+@media screen and (max-width: 576px) {
+    .videos {
+        grid-template-columns: 100vw;
         grid-template-rows: auto;
         grid-template-areas: "video1"
                              "video2"
