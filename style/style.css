@@ -2,9 +2,13 @@
 
 
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     font-family: Poppins;
+}
+
+body {
+    background-color: white;
 }
 
 
@@ -19,8 +23,8 @@ img {
     width: 68%;
     margin-top: 10px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-bottom: 20px;
 }
 
@@ -30,7 +34,6 @@ iframe {
 }
 
 .videos {
-    padding: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
@@ -68,19 +71,11 @@ iframe {
     grid-area: video6;
 }
 
-body {
-    background-color: white;
-}
-
 header {
     padding: 5px;
     background-color: black;
 }
 
-ul li {
-    color: white;
-    list-style-type: none;
-}
 
 a {
     text-decoration: none;
@@ -92,6 +87,12 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+ul li {
+    color: white;
+    list-style-type: none;
 }
 
 .icon {
@@ -100,8 +101,9 @@ nav ul {
 }
 
 footer {
-    padding: 50px;
     background-color: grey;
+    padding: 50px;
+    margin: 0px;
 }
 
 .redes {
@@ -134,6 +136,8 @@ footer {
     border: solid 0.5px;
 }
 
+
+
 .ticketLink {
     background-color: rgba(177, 171, 176, 0.795);
     font-weight: bold;
@@ -148,17 +152,11 @@ p {
 }
 
 .albums {
-    display: flex;
-    margin: 20px;
-}
-
-
-.albums {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
     grid-template-areas: "horses radioEthiopia"
-        "easter wave";
+                         "easter wave";
 }
 
 .horses {
