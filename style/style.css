@@ -7,6 +7,9 @@
     font-family: Poppins;
 }
 
+body {
+    background-color: white;
+}
 
 h1 {
     padding: 10px;
@@ -24,18 +27,25 @@ img {
     margin-bottom: 20px;
 }
 
+.logo-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    margin-top: 20px;
+    margin-bottom: 0%;
+}
+
 iframe {
     width: 100%;
     align-items: center;
 }
 
 .videos {
-    padding: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
     grid-template-areas: "video1 video2 video3"
-        "video4 video5 video6";
+                         "video4 video5 video6";
 }
 
 .video1 {
@@ -68,10 +78,6 @@ iframe {
     grid-area: video6;
 }
 
-body {
-    background-color: white;
-}
-
 header {
     padding: 5px;
     background-color: black;
@@ -88,10 +94,18 @@ a {
     color: white;
 }
 
+nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .icon {
@@ -100,6 +114,7 @@ nav ul {
 }
 
 footer {
+    margin-bottom: 0%;
     padding: 50px;
     background-color: grey;
 }
@@ -112,32 +127,56 @@ footer {
     height: 20px;
 }
 
-.tour {
-    padding: 10px;
-    margin: 20px 20px 80px 20px;
+.event1 {
+    grid-area: event1;
+}
+
+.event2 {
+    grid-area: event2;
+}
+
+.event3 {
+    grid-area: event3;
+}
+
+.event4 {
+    grid-area: event4;
+}
+
+.event5 {
+    grid-area: event5;
+}
+
+.tour2 {
+    margin-bottom: 1.5em;
+    display: grid;
+    gap: 20px;
     background-clip: border-box;
-    background: black;
-
-}
-
-.event {
-    height: 50px;
-    color: black;
-    background-color: white;
+    border: solid 3px;
     padding: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    border: solid 0.5px;
+    grid-template-areas: "event1"
+                         "event2"
+                         "event3"
+                         "event4"
+                         "event5";
 }
 
-.ticketLink {
+
+
+.ticketLink2 {
     background-color: rgba(177, 171, 176, 0.795);
     font-weight: bold;
     color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 1.5em;
+    gap: 20px;
+    justify-items: center;
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    border: solid 4px;
 }
 
 p {
@@ -149,7 +188,6 @@ p {
 
 .albums {
     display: flex;
-    margin: 20px;
 }
 
 
