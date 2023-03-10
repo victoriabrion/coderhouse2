@@ -1,0 +1,244 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap";
+iframe {
+  width: 100%;
+  align-items: center;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "video1 video2 video3" "video4 video5 video6";
+}
+
+.video1 {
+  padding: 5px;
+  grid-area: video1;
+}
+
+.video2 {
+  padding: 5px;
+  grid-area: video2;
+}
+
+.video3 {
+  padding: 5px;
+  grid-area: video3;
+}
+
+.video4 {
+  padding: 5px;
+  grid-area: video4;
+}
+
+.video5 {
+  padding: 5px;
+  grid-area: video5;
+}
+
+.video6 {
+  padding: 5px;
+  grid-area: video6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+}
+
+h1 {
+  padding: 10px;
+  margin: 10px;
+  color: black;
+  text-align: center;
+}
+
+p {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  text-align: justify;
+}
+
+header {
+  padding: 5px;
+  background-color: black;
+}
+
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+ul li {
+  color: white;
+  list-style-type: none;
+}
+
+.logo-image {
+  width: 100px;
+  height: 40px;
+}
+
+.imgLogo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+body {
+  background-color: white;
+}
+
+img {
+  width: 68%;
+  margin-top: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+}
+
+.event1 {
+  grid-area: event1;
+}
+
+.event2 {
+  grid-area: event2;
+}
+
+.event3 {
+  grid-area: event3;
+}
+
+.event4 {
+  grid-area: event4;
+}
+
+.event5 {
+  grid-area: event5;
+}
+
+.tour {
+  display: grid;
+  margin-bottom: 1.5rem;
+  background-clip: border-box;
+  padding: 30px;
+  grid-template-areas: "event1" "event2" "event3" "event4" "event5";
+}
+
+.ticketLink2 {
+  background-color: rgba(177, 171, 176, 0.795);
+  font-weight: bold;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 1.5em;
+  gap: 20px;
+  justify-items: center;
+  width: 300px;
+  height: 50px;
+  margin-top: 10px;
+  border: solid 4px;
+}
+
+.albums {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas: "horses radioEthiopia" "easter wave";
+}
+
+.horses {
+  grid-area: horses;
+}
+
+.radioEthiopia {
+  grid-area: radioEthiopia;
+}
+
+.easter {
+  grid-area: easter;
+}
+
+.wave {
+  grid-area: wave;
+}
+
+footer {
+  margin-bottom: 0%;
+  padding: 50px;
+  background-color: grey;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .videos {
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas: "video1" "video2" "video3" "video4" "video5" "video6";
+  }
+  .albums {
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas: "horses" "radioEthiopia" "easter" "wave";
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .videos {
+    grid-template-columns: 50vw;
+    grid-template-rows: auto;
+    grid-template-areas: "video1 video2" "video3 video4" "video5 video6";
+  }
+  .albums {
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas: "horses" "radioEthiopia" "easter" "wave";
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .videos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "video1 video2 video3" "video4 video5 video6";
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

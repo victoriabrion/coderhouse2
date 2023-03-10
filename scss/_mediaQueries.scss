@@ -1,0 +1,45 @@
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+
+@media screen and (max-width: $small) {
+	.videos {
+		grid-template-columns: 100vw;
+		grid-template-rows: auto;
+		grid-template-areas: "video1" 
+							 "video2" 
+							 "video3"
+							 "video4" 
+							 "video5" 
+							 "video6";
+	}
+	.albums {
+		grid-template-columns: 100vw;
+		grid-template-rows: auto;
+		grid-template-areas: "horses" "radioEthiopia" "easter" "wave";
+	}
+	
+}
+@media screen and (max-width: $medium) and (min-width: $small) {
+	.videos {
+		grid-template-columns: 50vw;
+		grid-template-rows: auto;
+		grid-template-areas: "video1 video2" 
+							 "video3 video4"
+							 "video5 video6";
+	}
+	.albums {
+		grid-template-columns: 100vw;
+		grid-template-rows: auto;
+		grid-template-areas: "horses" "radioEthiopia" "easter" "wave";
+	}
+	
+}
+@media screen and (max-width: $large) and (min-width: $medium) {
+	.videos {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto auto auto;
+		grid-template-areas: "video1 video2 video3"
+							 "video4 video5 video6";
+	}
+}

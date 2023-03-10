@@ -1,0 +1,18 @@
+.albums {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto auto;
+	grid-template-areas: "horses radioEthiopia" "easter wave";
+}
+.horses {
+	grid-area: horses;
+}
+.radioEthiopia {
+	grid-area: radioEthiopia;
+}
+.easter {
+	grid-area: easter;
+}
+.wave {
+	grid-area: wave;
+}
