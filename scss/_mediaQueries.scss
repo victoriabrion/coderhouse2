@@ -3,6 +3,7 @@ $medium: 768px;
 $large: 992px;
 
 @media screen and (max-width: $small) {
+	@include transformHeader (2.0em);
 	.videos {
 		grid-template-columns: 100vw;
 		grid-template-rows: auto;
@@ -21,6 +22,7 @@ $large: 992px;
 	
 }
 @media screen and (max-width: $medium) and (min-width: $small) {
+	@include transformHeader (2.2em);
 	.videos {
 		grid-template-columns: 50vw;
 		grid-template-rows: auto;
@@ -36,6 +38,7 @@ $large: 992px;
 	
 }
 @media screen and (max-width: $large) and (min-width: $medium) {
+	@include transformHeader (2.5em);
 	.videos {
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: auto auto auto;

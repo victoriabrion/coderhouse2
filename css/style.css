@@ -41,6 +41,10 @@ iframe {
   grid-area: video6;
 }
 
+h1 {
+  font-size: 3em;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -210,6 +214,9 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2em;
+  }
   .videos {
     grid-template-columns: 100vw;
     grid-template-rows: auto;
@@ -222,6 +229,9 @@ a {
   }
 }
 @media screen and (max-width: 768px) and (min-width: 576px) {
+  h1 {
+    font-size: 2.2em;
+  }
   .videos {
     grid-template-columns: 50vw;
     grid-template-rows: auto;
@@ -234,6 +244,9 @@ a {
   }
 }
 @media screen and (max-width: 992px) and (min-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
   .videos {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
